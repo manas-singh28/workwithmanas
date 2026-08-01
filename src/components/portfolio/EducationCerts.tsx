@@ -17,22 +17,22 @@ export function Education() {
                   <GraduationCap className="size-5" />
                 </span>
                 <div>
-                  <h3 className="text-lg font-semibold">VIT Chennai</h3>
+                  <h3 className="text-lg font-semibold">Vellore Institute of Technology, India</h3>
                   <p className="text-sm text-muted-foreground">
-                    Bachelor of Technology · Electronics and Communication Engineering
+                    Bachelor of Technology · Electronics and Communications
                   </p>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted-foreground">
-                  2019 – 2023
-                </span>
-                <span className="rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted-foreground">
-                  CGPA 8.01
-                </span>
-              </div>
+              <span className="rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted-foreground">
+                Graduated April 2023
+              </span>
             </div>
+            <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+              <span className="text-foreground">Relevant coursework:</span> Object-Oriented
+              Programming, Cloud Technologies, Database Management.
+            </p>
           </div>
+
         </Reveal>
       </div>
     </section>
