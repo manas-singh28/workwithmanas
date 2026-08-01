@@ -1,60 +1,97 @@
-import { ArrowUpRight, BrainCircuit, Music4, Wallet } from "lucide-react";
+import {
+  BrainCircuit,
+  Bike,
+  Download,
+  Heart,
+  LayoutTemplate,
+  LineChart,
+  Music4,
+  Salad,
+  Users,
+} from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
+
+import aiCareerCoach from "@/assets/case-studies/AI_CAREER_COACH_CASE_STUDY.pdf.asset.json";
+import weekenderPrd from "@/assets/case-studies/APPP_FOR_WEEKEND_PRD.pdf.asset.json";
+import weekenderWireframe from "@/assets/case-studies/APP_FOR_WEEKEND_WIREFRAME.pdf.asset.json";
+import virtualCompanions from "@/assets/case-studies/MARKET_ANALYSIS_VIRTUAL_COMPANIES.pdf.asset.json";
+import rapido from "@/assets/case-studies/RAPIDO_USER_ENGAGEMENT.pdf.asset.json";
+import spotify from "@/assets/case-studies/SPOTIFY_CASE_STUDY.pdf.asset.json";
+import tooGoodToGo from "@/assets/case-studies/TOO_GOOD_TO_GO_APP_TEARDOWN.pdf.asset.json";
+import zerodha from "@/assets/case-studies/ZERODHA_Product_Teardown.pdf.asset.json";
 
 const caseStudies = [
   {
-    icon: Wallet,
-    tag: "Fintech · AI · B2B",
-    title: "AI Smart Wallet for Corporate Expense Management",
+    icon: BrainCircuit,
+    tag: "AI · Career Tech · Case Study",
+    title: "AI Career Coach",
     summary:
-      "An AI-powered enterprise expense platform that automates receipt scanning, fraud detection, policy compliance, intelligent categorization, and corporate spending insights.",
-    chapters: [
-      "Problem",
-      "Research",
-      "User Personas",
-      "Competitive Analysis",
-      "Opportunity",
-      "Product Vision",
-      "PRD",
-      "Wireframes",
-      "Roadmap",
-      "KPIs",
-      "Business Impact",
-    ],
+      "An AI-powered career platform that helps professionals discover career paths, build personalised learning roadmaps, sharpen resumes and prepare for interviews with adaptive coaching.",
+    chapters: ["Problem Discovery", "User Interviews", "MVP Scope", "AI Features", "Wireframes", "Success Metrics"],
+    file: aiCareerCoach,
   },
   {
     icon: Music4,
-    tag: "Consumer · Growth",
-    title: "Spotify Product Growth Strategy",
+    tag: "Consumer · Growth Strategy",
+    title: "Increasing Time Spent Listening on Spotify",
     summary:
-      "Increase listening time through AI-powered recommendations, social listening experiences, personalized discovery, and durable engagement loops.",
-    chapters: [
-      "Current Problems",
-      "Market Research",
-      "Growth Opportunities",
-      "Feature Prioritization",
-      "User Journey",
-      "Experiments",
-      "Metrics",
-      "Expected Impact",
-    ],
+      "A growth case study on India's ₹1,109M music streaming market — analysing search trends, regional content shifts and user penetration to design discovery and engagement loops that lift listening hours.",
+    chapters: ["Market Landscape", "Google Trends", "User Segments", "Growth Levers", "Experiments", "Metrics"],
+    file: spotify,
   },
   {
-    icon: BrainCircuit,
-    tag: "AI · Career Tech",
-    title: "AI Career Coach",
+    icon: Bike,
+    tag: "Mobility · PRD",
+    title: "Rapido — Commuter Subscription & Engagement",
     summary:
-      "An AI-powered career platform helping professionals discover career paths, build learning roadmaps, improve resumes, prepare for interviews, and receive personalized coaching.",
-    chapters: [
-      "Problem Discovery",
-      "User Interviews",
-      "MVP",
-      "Product Strategy",
-      "AI Features",
-      "Wireframes",
-      "Success Metrics",
-      "Roadmap",
-    ],
+      "A PRD tackling surge-driven price volatility and churn for daily commuters through a prepaid ride subscription: predictable fares, loyalty benefits and stronger revenue visibility.",
+    chapters: ["Problem Definition", "Target Users", "Goals", "Functional Metrics", "Solution", "Success Criteria"],
+    file: rapido,
+  },
+  {
+    icon: Users,
+    tag: "Social · PRD",
+    title: "Weekender — Social Weekend Planning (PRD)",
+    summary:
+      "A product requirements doc for an app that fights urban loneliness by curating low-pressure, solo-friendly weekend plans for 22–35 year olds, monetised via event partnerships and ticketing.",
+    chapters: ["Problem", "Personas", "Business Value", "Why Now", "Goals", "Metrics"],
+    file: weekenderPrd,
+  },
+  {
+    icon: LayoutTemplate,
+    tag: "Design · Wireframes",
+    title: "Weekender — Onboarding & App Wireframes",
+    summary:
+      "End-to-end wireframes for Weekender: quiz-led onboarding capturing vibe and comfort level, trust-boosting profile verification, and a “This Weekend's Picks” home experience.",
+    chapters: ["Onboarding Quiz", "Verification", "Home Feed", "Plan Detail", "Group Flow", "Post-Event"],
+    file: weekenderWireframe,
+  },
+  {
+    icon: Heart,
+    tag: "Market Research",
+    title: "Virtual Companions — India Market Analysis",
+    summary:
+      "Market sizing for AI companions in India: Gen Z scale, 78% mobile penetration and a mental-health app market growing from $195M (2024) to $1.97B (2035), with a 25–60M potential user base by 2030.",
+    chapters: ["Market Overview", "Adoption Trends", "Sub-segments", "Target Audience", "Growth Projections", "Risks"],
+    file: virtualCompanions,
+  },
+  {
+    icon: Salad,
+    tag: "Product Teardown",
+    title: "Too Good To Go — App Teardown",
+    summary:
+      "A teardown of the Danish food-waste marketplace: how surprise “Magic Bags” of surplus food, a commission model and a sustainability mission create a win for users, merchants and the planet.",
+    chapters: ["About", "Business Model", "Target User", "User Journey", "Market Landscape", "Financials"],
+    file: tooGoodToGo,
+  },
+  {
+    icon: LineChart,
+    tag: "Fintech · Product Teardown",
+    title: "Zerodha — Product Teardown",
+    summary:
+      "A teardown of India's largest discount broker — ₹8,320 Cr revenue and ₹4,700 Cr profit in FY24 — unpacking the zero-brokerage model, product ecosystem and what drives its profitability.",
+    chapters: ["About", "Market Landscape", "Business Model", "Product Suite", "User Journey", "Opportunities"],
+    file: zerodha,
   },
 ];
 
@@ -64,12 +101,12 @@ export function CaseStudies() {
       <SectionHeading
         eyebrow="Case Studies"
         title="Product thinking, end to end."
-        subtitle="From discovery and research to PRDs, prioritization, experiments and measurable impact."
+        subtitle="PRDs, teardowns, market analyses and growth strategies — download any of them as a PDF."
       />
 
       <div className="grid gap-6">
         {caseStudies.map((cs, i) => (
-          <Reveal key={cs.title} delay={i * 0.08}>
+          <Reveal key={cs.title} delay={i * 0.06}>
             <article className="glass-card glass-card-hover group grid gap-8 p-6 sm:p-9 lg:grid-cols-[1.1fr_0.9fr]">
               <div>
                 <div className="flex items-center gap-3">
@@ -82,10 +119,16 @@ export function CaseStudies() {
                 </div>
                 <h3 className="mt-5 text-balance text-xl font-semibold sm:text-2xl">{cs.title}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cs.summary}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary-glow">
-                  Read case study
-                  <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-                </span>
+                <a
+                  href={cs.file.url}
+                  download={cs.file.original_filename}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 rounded-xl border border-border bg-surface/70 px-4 py-2 text-sm font-medium text-primary-glow transition-colors duration-300 hover:border-primary/50 hover:bg-surface"
+                >
+                  <Download className="size-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+                  Download PDF
+                </a>
               </div>
 
               <div className="rounded-2xl border border-border bg-surface/60 p-5">
