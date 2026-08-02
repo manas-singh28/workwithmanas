@@ -137,7 +137,7 @@ export function CaseStudies() {
                   src={cs.cover.url}
                   alt={`${cs.title} case study cover page`}
                   loading="lazy"
-                  className="aspect-[4/3] w-full bg-background/40 object-contain p-3 transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  className="aspect-[16/10] w-full bg-background/40 object-contain p-2 transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                 />
               </a>
 
