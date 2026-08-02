@@ -8,6 +8,7 @@ import {
   Music4,
   Salad,
   Users,
+  Wallet,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
 
@@ -19,6 +20,7 @@ import rapido from "@/assets/case-studies/RAPIDO_USER_ENGAGEMENT.pdf.asset.json"
 import spotify from "@/assets/case-studies/SPOTIFY_CASE_STUDY.pdf.asset.json";
 import tooGoodToGo from "@/assets/case-studies/TOO_GOOD_TO_GO_APP_TEARDOWN.pdf.asset.json";
 import zerodha from "@/assets/case-studies/ZERODHA_Product_Teardown.pdf.asset.json";
+import wiseWallet from "@/assets/case-studies/WISEWALLET_CASE_STUDY.pdf.asset.json";
 
 import aiCareerCoachCover from "@/assets/covers/AI_CAREER_COACH_CASE_STUDY.jpg.asset.json";
 import weekenderPrdCover from "@/assets/covers/APPP_FOR_WEEKEND_PRD.jpg.asset.json";
@@ -28,8 +30,20 @@ import rapidoCover from "@/assets/covers/RAPIDO_USER_ENGAGEMENT.jpg.asset.json";
 import spotifyCover from "@/assets/covers/SPOTIFY_CASE_STUDY.jpg.asset.json";
 import tooGoodToGoCover from "@/assets/covers/TOO_GOOD_TO_GO_APP_TEARDOWN.jpg.asset.json";
 import zerodhaCover from "@/assets/covers/ZERODHA_Product_Teardown.jpg.asset.json";
+import wiseWalletCover from "@/assets/covers/WISEWALLET_CASE_STUDY.jpg.asset.json";
 
 const caseStudies = [
+  {
+    icon: Wallet,
+    tag: "Fintech · SMB · Case Study",
+    title: "WiseWallet — AI Expense Management for SMBs",
+    summary:
+      "A case study on the $7.64B expense management market: SMBs find SAP Concur and Expensify too costly and complex, so WiseWallet ships a WhatsApp chatbot with IDP-powered receipt reading, automated approvals and a freemium model built for teams without an IT function.",
+    chapters: ["Market Overview", "User Research", "Problem", "Ideation & RICE", "System Design", "Wireframes", "AARRR Metrics", "Launch Plan"],
+    file: wiseWallet,
+    cover: wiseWalletCover,
+  },
+
   {
     icon: BrainCircuit,
     tag: "AI · Career Tech · Case Study",
