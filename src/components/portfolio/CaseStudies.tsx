@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   BrainCircuit,
   Bike,
@@ -10,6 +11,7 @@ import {
   Users,
   Wallet,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { Reveal, SectionHeading } from "./primitives";
 
 import aiCareerCoach from "@/assets/case-studies/AI_CAREER_COACH_CASE_STUDY.pdf.asset.json";
