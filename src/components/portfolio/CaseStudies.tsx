@@ -133,7 +133,7 @@ function topicFromTag(tag: string) {
   if (normalized.includes("prd")) return "PRD";
   if (normalized.includes("product teardown")) return "Product Teardown";
   if (normalized.includes("market research")) return "Market Research";
-  if (normalized.includes("wireframes") || normalized.includes("design"pro")) return "Design";
+  if (normalized.includes("wireframes") || normalized.includes("design")) return "Design";
   const first = tag.split("·")[0]?.trim() ?? "";
   if (first === "Fintech" || first === "Mobility") return "Case Study";
   return first;
