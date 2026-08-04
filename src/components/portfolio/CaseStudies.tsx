@@ -128,17 +128,21 @@ const caseStudies = [
   },
 ];
 
+function topicFromTag(tag: string) {
+  return tag.split("·")[0]?.trim() ?? "";
+}
+
 export function CaseStudies() {
   const [active, setActive] = useState<string>("All");
 
   const topics = Array.from(
-    new Set(caseStudies.map((cs) => cs.tag.split("·")[0].trim()))
+    new Set(caseStudies.map((cs) => topicFromTag(cs.tag)))
   ).sort();
 
   const filtered =
     active === "All"
       ? caseStudies
-      : caseStudies.filter((cs) => cs.tag.split("·")[0].trim() === active);
+      : caseStudies.filter((cs) => topicFromTag(cs.tag) === active);
 
   const chipBase =
     "rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors duration-300";
