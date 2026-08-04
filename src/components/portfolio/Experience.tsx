@@ -1,5 +1,5 @@
-import { Building2 } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
+import hsbcLogo from "@/assets/hsbc-logo.svg.asset.json";
 
 const roles = [
   {
@@ -44,8 +44,12 @@ export function Experience() {
             <div className="glass-card glass-card-hover p-6 sm:p-8">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <span className="rounded-xl border border-border bg-surface p-2.5">
-                    <Building2 className="size-5 text-primary-glow" />
+                  <span className="flex items-center justify-center rounded-xl border border-border bg-surface p-2.5">
+                    <img
+                      src={hsbcLogo.url}
+                      alt="HSBC logo"
+                      className="size-5 object-contain"
+                    />
                   </span>
                   <div>
                     <h3 className="text-lg font-semibold">{role.title}</h3>
