@@ -129,7 +129,14 @@ const caseStudies = [
 ];
 
 function topicFromTag(tag: string) {
-  return tag.split("·")[0]?.trim() ?? "";
+  const normalized = tag.toLowerCase();
+  if (normalized.includes("prd")) return "PRD";
+  if (normalized.includes("product teardown")) return "Product Teardown";
+  if (normalized.includes("market research")) return "Market Research";
+  if (normalized.includes("wireframes") || normalized.includes("design"pro")) return "Design";
+  const first = tag.split("·")[0]?.trim() ?? "";
+  if (first === "Fintech" || first === "Mobility") return "Case Study";
+  return first;
 }
 
 export function CaseStudies() {
