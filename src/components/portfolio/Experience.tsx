@@ -1,5 +1,5 @@
-import { Building2 } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
+import hsbcLogo from "@/assets/hsbc-logo.svg.asset.json";
 
 const roles = [
   {
