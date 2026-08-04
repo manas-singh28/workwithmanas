@@ -165,13 +165,6 @@ export function CaseStudies() {
       />
 
       <div className="mb-10 flex flex-wrap gap-2">
-        <button
-          type="button"
-          onClick={() => setActive("All")}
-          className={cn(chipBase, active === "All" ? chipActive : chipInactive)}
-        >
-          All
-        </button>
         {topics.map((topic) => (
           <button
             type="button"
@@ -182,6 +175,13 @@ export function CaseStudies() {
             {topic}
           </button>
         ))}
+        <button
+          type="button"
+          onClick={() => setActive("All")}
+          className={cn(chipBase, active === "All" ? chipActive : chipInactive)}
+        >
+          All
+        </button>
       </div>
 
       <div className="grid gap-6">
