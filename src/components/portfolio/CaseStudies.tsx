@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   BrainCircuit,
   Bike,
@@ -10,6 +11,7 @@ import {
   Users,
   Wallet,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { Reveal, SectionHeading } from "./primitives";
 
 import aiCareerCoach from "@/assets/case-studies/AI_CAREER_COACH_CASE_STUDY.pdf.asset.json";
@@ -126,7 +128,29 @@ const caseStudies = [
   },
 ];
 
+function topicFromTag(tag: string) {
+  return tag.split("·")[0]?.trim() ?? "";
+}
+
 export function CaseStudies() {
+  const [active, setActive] = useState<string>("All");
+
+  const topics = Array.from(
+    new Set(caseStudies.map((cs) => topicFromTag(cs.tag)))
+  ).sort();
+
+  const filtered =
+    active === "All"
+      ? caseStudies
+      : caseStudies.filter((cs) => topicFromTag(cs.tag) === active);
+
+  const chipBase =
+    "rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors duration-300";
+  const chipInactive =
+    "border-border bg-surface/60 text-muted-foreground hover:border-primary/40 hover:text-foreground";
+  const chipActive =
+    "border-primary/50 bg-primary/15 text-primary-glow";
+
   return (
     <section id="case-studies" className="section-shell">
       <SectionHeading
@@ -135,8 +159,28 @@ export function CaseStudies() {
         subtitle="PRDs, teardowns, market analyses and growth strategies — download any of them as a PDF."
       />
 
+      <div className="mb-10 flex flex-wrap gap-2">
+        <button
+          type="button"
+          onClick={() => setActive("All")}
+          className={cn(chipBase, active === "All" ? chipActive : chipInactive)}
+        >
+          All
+        </button>
+        {topics.map((topic) => (
+          <button
+            type="button"
+            key={topic}
+            onClick={() => setActive(topic)}
+            className={cn(chipBase, active === topic ? chipActive : chipInactive)}
+          >
+            {topic}
+          </button>
+        ))}
+      </div>
+
       <div className="grid gap-6">
-        {caseStudies.map((cs, i) => (
+        {filtered.map((cs, i) => (
           <Reveal key={cs.title} delay={i * 0.06}>
             <article className="glass-card glass-card-hover group grid gap-8 p-6 sm:p-9 lg:grid-cols-[0.85fr_1.15fr]">
               <a
