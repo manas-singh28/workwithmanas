@@ -8,6 +8,7 @@ import pat25Cover from "@/assets/awards/Pat_on_the_Back.jpg.asset.json";
 import pat24Cover from "@/assets/awards/Pat_on_the_Back_1.jpg.asset.json";
 import pioneerCover from "@/assets/awards/Pioneer_of_Quarter.jpg.asset.json";
 import nextleapCover from "@/assets/awards/nextleap-top-fellow.png.asset.json";
+import awsCover from "@/assets/awards/aws-saa-badge.png.asset.json";
 
 export function Education() {
   return (
@@ -83,7 +84,7 @@ const items = [
     icon: ShieldCheck,
     title: "AWS Certified Solutions Architect – Associate",
     detail: "Cloud architecture, scalability, resilience and cost-aware system design.",
-    cover: null,
+    cover: awsCover,
     file: null,
   },
 ];
