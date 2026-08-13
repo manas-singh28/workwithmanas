@@ -138,7 +138,7 @@ function topicFromTag(tag: string) {
 }
 
 export function CaseStudies() {
-  const [active, setActive] = useState<string>("All");
+  const [active, setActive] = useState<string>("Case Study");
 
   const topics = Array.from(
     new Set(caseStudies.map((cs) => topicFromTag(cs.tag)))
