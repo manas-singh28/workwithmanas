@@ -7,6 +7,7 @@ import pioneerPdf from "@/assets/awards/Pioneer_of_Quarter.pdf.asset.json";
 import pat25Cover from "@/assets/awards/Pat_on_the_Back.jpg.asset.json";
 import pat24Cover from "@/assets/awards/Pat_on_the_Back_1.jpg.asset.json";
 import pioneerCover from "@/assets/awards/Pioneer_of_Quarter.jpg.asset.json";
+import nextleapCover from "@/assets/awards/nextleap-top-fellow.png.asset.json";
 
 export function Education() {
   return (
@@ -75,8 +76,8 @@ const items = [
     icon: Award,
     title: "NextLeap Top Product Management Fellow",
     detail: "Selected among top performers of the NextLeap Product Management Fellowship.",
-    cover: null,
-    file: null,
+    cover: nextleapCover,
+    file: nextleapCover,
   },
   {
     icon: ShieldCheck,
