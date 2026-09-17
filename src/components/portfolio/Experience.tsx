@@ -3,25 +3,23 @@ import hsbcLogo from "@/assets/hsbc-logo.svg.asset.json";
 
 const roles = [
   {
-    title: "Senior Software Engineer",
+    title: "Senior Software Engineer — AI & Product Development",
     company: "HSBC Technology India",
     period: "Oct 2025 – Present",
     achievements: [
-      "Designed and delivered RESTful APIs and 5+ Java Spring Boot microservices for real-time payments in Japan, extending global real-time payment capabilities (IMPS-like) with Kafka-based client notifications and seamless international API integration supporting 500 TPS.",
-      "Built automated scheduled jobs for MongoDB archival and purging using Spring and shell scripting, saving ~1 hour per engineer per week by eliminating repetitive manual tasks.",
-      "Owned end-to-end development, testing (functional, performance, regression), and deployment on Kubernetes using Jenkins CI/CD pipelines.",
+      "Shipped an MCP-based transaction capability for HSBC's Ask Nio conversational banking experience, enabling natural-language transaction retrieval; owned requirements and AI guardrails, including entitlement scoping and hallucination checks, increasing self-service deflection by 23%.",
+      "Drove production readiness for an AI-enabled MCP transaction-history experience, defining success metrics and leading cross-functional load testing; validated 100 TPS at 100% pass rate and 200 TPS at 99.08%, informing SLOs, capacity plans, and prioritized fixes.",
+      "Led authentication improvements for HSBC corporate clients, adding an activity-based session-extension flow so Ask Nio could act securely without mid-conversation timeouts—cutting session drop-offs by 17% and lifting login success to 98%.",
     ],
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer — Trade and Transaction Reporting",
     company: "HSBC Technology India",
     period: "Aug 2023 – Sept 2025",
     achievements: [
-      "Developed a real-time data API enabling trade and transaction reporting pods to handle ~5M records with sub-second response times, reducing data access latency by ~40% and L1 queries by ~15%.",
-      "Collaborated in Agile cross-functional teams to deliver 5+ backend-driven POCs, with 3 deployed to production, reducing time-to-market by 30%.",
-      "Developed a backend system serving 11 business lines with high-quality reference data.",
-      "Designed and exposed RESTful APIs for crash log ingestion and system health data, reducing debugging and issue resolution time by 70% across development and QA teams.",
-      "Enabled business teams to independently manage static data without IT intervention, reducing support tickets and manual tasks to near zero after onboarding.",
+      "Defined and prioritized an automated data-archival workflow after analyzing lifecycle processes and stakeholder needs, freeing ~2 engineering hours per day across an 8-member team.",
+      "Led product discovery and requirements definition across 11 business lines for a shared reference-data platform. Prioritized and shipped a real-time reporting API processing ~5M records, reducing data-access latency by ~40% and L1 support queries by ~15%.",
+      "Defined a self-service workflow for business teams to manage static data independently after analyzing support-ticket patterns, reducing related IT requests to near zero.",
     ],
   },
 ];
@@ -31,8 +29,8 @@ export function Experience() {
     <section id="experience" className="section-shell">
       <SectionHeading
         eyebrow="Experience"
-        title="Shipping systems that banks depend on."
-        subtitle="Three years of building production-grade backend platforms in a global bank."
+        title="Building AI and data products for enterprise banking."
+        subtitle="Three years of pairing product ownership with hands-on engineering at HSBC."
       />
 
       <div className="relative space-y-8 pl-6 sm:pl-10">
