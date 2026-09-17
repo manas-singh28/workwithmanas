@@ -3,10 +3,10 @@ import { Counter, Reveal, SectionHeading } from "./primitives";
 const metrics = [
   { value: 3, suffix: "+", label: "Years Experience" },
   { value: 5, suffix: "M+", label: "Records Processed" },
-  { value: 500, suffix: " TPS", label: "Payment Systems" },
+  { value: 23, suffix: "%", label: "Self-Service Deflection" },
   { value: 11, suffix: "", label: "Business Lines Supported" },
-  { value: 5, suffix: "+", label: "Production Microservices" },
-  { value: 3, suffix: "", label: "Product POCs Delivered" },
+  { value: 98, suffix: "%", label: "Login Success" },
+  { value: 200, suffix: " TPS", label: "AI Load Validated" },
 ];
 
 export function About() {
@@ -17,22 +17,22 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-[1fr_1fr]">
         <Reveal className="space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            I am a Senior Software Engineer at HSBC focused on building reliable, scalable, and
-            client-loved products.
+            I am a technical product builder at HSBC, combining software engineering depth with
+            hands-on product discovery, requirements definition, prioritization, and delivery.
           </p>
           <p>
-            Over the past three years, I have developed distributed backend systems, real-time
-            payment infrastructure, and enterprise APIs serving millions of transactions.
+            Over the past three years, I have shipped conversational AI, authentication, API, and
+            data products used in enterprise banking—improving self-service, reliability, and
+            operational efficiency.
           </p>
           <p>
-            Today, I am transitioning into Technical Product Management because I enjoy
-            understanding customer problems, discovering opportunities, prioritizing impactful
-            features, and working across engineering and business teams to deliver products users
-            genuinely love.
+            My work spans the full product lifecycle: understanding user and stakeholder needs,
+            defining guardrails and success metrics, shaping roadmaps, and partnering across teams
+            to take complex capabilities into production.
           </p>
           <p className="text-foreground">
-            My passion is solving complex business challenges through elegant, minimalist
-            technology.
+            I am especially interested in building trustworthy AI and technical products that turn
+            complex systems into simple, measurable customer outcomes.
           </p>
         </Reveal>
 

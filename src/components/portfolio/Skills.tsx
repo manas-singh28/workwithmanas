@@ -15,42 +15,38 @@ import {
   Presentation,
   MessagesSquare,
   Sparkles,
+  ShieldCheck,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
 
 const engineering = [
+  { name: "Conversational AI", icon: <Sparkles className="size-3.5" /> },
+  { name: "MCP", icon: <Workflow className="size-3.5" /> },
+  { name: "LLM Applications", icon: <Cpu className="size-3.5" /> },
+  { name: "AI Guardrails", icon: <ShieldCheck className="size-3.5" /> },
   { name: "Java", icon: <JavaIcon /> },
-  { name: "Spring Boot", icon: <SpringIcon /> },
   { name: "Python", icon: <PythonIcon /> },
   { name: "Kafka", icon: <KafkaIcon /> },
   { name: "REST APIs", icon: <Code2 className="size-3.5" /> },
   { name: "Microservices", icon: <Layers className="size-3.5" /> },
   { name: "SQL", icon: <Database className="size-3.5" /> },
-  { name: "PostgreSQL", icon: <PostgresIcon /> },
-  { name: "MongoDB", icon: <MongoIcon /> },
-  { name: "MySQL", icon: <MySQLIcon /> },
   { name: "Docker", icon: <DockerIcon /> },
   { name: "Kubernetes", icon: <KubernetesIcon /> },
   { name: "AWS", icon: <AWSIcon /> },
-  { name: "Jenkins", icon: <JenkinsIcon /> },
   { name: "System Design", icon: <Workflow className="size-3.5" /> },
-  { name: "Performance Optimization", icon: <Gauge className="size-3.5" /> },
 ];
 
 const product = [
   { name: "Product Discovery", icon: <Search className="size-3.5" /> },
   { name: "Product Strategy", icon: <Target className="size-3.5" /> },
   { name: "User Research", icon: <Users className="size-3.5" /> },
-  { name: "Product Roadmapping", icon: <Presentation className="size-3.5" /> },
-  { name: "PRD Writing", icon: <FileText className="size-3.5" /> },
-  { name: "Prioritization (RICE, MoSCoW)", icon: <LineChart className="size-3.5" /> },
-  { name: "Product Analytics", icon: <LineChart className="size-3.5" /> },
-  { name: "Success Metrics", icon: <Target className="size-3.5" /> },
-  { name: "Experimentation", icon: <FlaskConical className="size-3.5" /> },
-  { name: "Market Research", icon: <Search className="size-3.5" /> },
+  { name: "Roadmapping", icon: <Presentation className="size-3.5" /> },
+  { name: "PRDs", icon: <FileText className="size-3.5" /> },
+  { name: "Prioritization", icon: <LineChart className="size-3.5" /> },
+  { name: "Product Metrics", icon: <Target className="size-3.5" /> },
+  { name: "Experimentation & A/B Testing", icon: <FlaskConical className="size-3.5" /> },
+  { name: "GTM", icon: <Presentation className="size-3.5" /> },
   { name: "Stakeholder Management", icon: <MessagesSquare className="size-3.5" /> },
-  { name: "Cross-functional Leadership", icon: <Users className="size-3.5" /> },
-  { name: "AI Product Design", icon: <Sparkles className="size-3.5" /> },
 ];
 
 function JavaIcon() {

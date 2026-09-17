@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Sparkles } from "lucide-react";
 import profile from "@/assets/manas.jpg";
+import resume from "@/assets/resume/PM_ManasSingh_Resume.pdf.asset.json";
 
 export function Hero() {
   return (
@@ -14,7 +15,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-medium text-muted-foreground"
           >
             <Sparkles className="size-3.5 text-primary-glow" />
-            Software Engineer → Technical Product Manager
+            AI &amp; Technical Product Builder
           </motion.span>
 
           <motion.h1
@@ -36,11 +37,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.18 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground"
           >
-            Hi, I&apos;m <span className="font-medium text-foreground">Manas</span> — Senior
-            Software Engineer at HSBC, passionate about building reliable, scalable products and now
-            transitioning into Technical Product Management. I combine deep engineering expertise
-            with product thinking to solve complex business problems through simple, user-centric
-            experiences.
+            Hi, I&apos;m <span className="font-medium text-foreground">Manas</span> — a technical
+            product builder with 3+ years at HSBC. I combine software engineering with product
+            discovery, requirements, prioritization, and cross-functional delivery to ship AI,
+            payments, API, and data products for enterprise banking.
           </motion.p>
 
           <motion.div
@@ -57,10 +57,14 @@ export function Hero() {
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#contact"
+              href={resume.url}
+              target="_blank"
+              rel="noreferrer"
+              download="PM_ManasSingh_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 text-sm font-medium transition-colors hover:border-ring"
             >
-              Let&apos;s Connect
+              <Download className="size-4" />
+              Download Resume
             </a>
           </motion.div>
         </div>

@@ -9,9 +9,9 @@ import { CaseStudies } from "@/components/portfolio/CaseStudies";
 import { Education, Certifications } from "@/components/portfolio/EducationCerts";
 import { Contact, SiteFooter } from "@/components/portfolio/Contact";
 
-const title = "Manas — Software Engineer & Technical Product Manager";
+const title = "Manas Singh — AI & Technical Product Builder";
 const description =
-  "Portfolio of Manas, Senior Software Engineer at HSBC transitioning into Technical Product Management — payments infrastructure, scalable APIs and AI product case studies.";
+  "Manas Singh builds AI, payments, API and data products at HSBC, combining engineering expertise with product discovery and cross-functional delivery.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
