@@ -15,6 +15,7 @@ import {
   Presentation,
   MessagesSquare,
   Sparkles,
+  ShieldCheck,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
 
