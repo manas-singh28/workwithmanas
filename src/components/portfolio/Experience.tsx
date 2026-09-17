@@ -42,13 +42,11 @@ export function Experience() {
             <div className="glass-card glass-card-hover p-6 sm:p-8">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <span className="flex items-center justify-center rounded-xl border border-border bg-surface p-2.5">
-                    <img
-                      src={hsbcLogo.url}
-                      alt="HSBC logo"
-                      className="size-5 object-contain"
-                    />
-                  </span>
+                  <img
+                    src={hsbcLogo.url}
+                    alt="HSBC logo"
+                    className="h-9 w-auto sm:h-10"
+                  />
                   <div>
                     <h3 className="text-lg font-semibold">{role.title}</h3>
                     <p className="text-sm text-muted-foreground">{role.company}</p>
@@ -62,8 +60,8 @@ export function Experience() {
               <ul className="mt-7 space-y-4">
                 {role.achievements.map((a, i) => (
                   <Reveal key={a} delay={i * 0.04}>
-                    <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                      <span className="bg-gradient-primary mt-[0.55rem] size-1.5 shrink-0 rounded-full" />
+                    <li className="flex gap-3 text-[15px] leading-relaxed text-foreground/80 sm:text-base">
+                      <span className="bg-gradient-primary mt-[0.6rem] size-1.5 shrink-0 rounded-full" />
                       {a}
                     </li>
                   </Reveal>
