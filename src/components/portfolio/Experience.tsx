@@ -45,7 +45,7 @@ export function Experience() {
                   <img
                     src={hsbcLogo.url}
                     alt="HSBC logo"
-                    className="h-7 w-auto sm:h-8"
+                    className="h-9 w-auto sm:h-10"
                   />
                   <div>
                     <h3 className="text-lg font-semibold">{role.title}</h3>
