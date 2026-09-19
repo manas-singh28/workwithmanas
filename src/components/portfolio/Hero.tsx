@@ -24,11 +24,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="mt-7 text-balance text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl"
           >
-            <span className="text-gradient">Building Technology.</span>
+            <span className="text-gradient">Technical Product Builder.</span>
             <br />
-            Designing Products.
+            Turning Complex Problems
             <br />
-            Creating Impact.
+            Into Products That Ship.
           </motion.h1>
 
           <motion.p
@@ -37,10 +37,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.18 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground"
           >
-            Hi, I&apos;m <span className="font-medium text-foreground">Manas</span> — a technical
-            product builder with 3+ years at HSBC. I combine software engineering with product
-            discovery, requirements, prioritization, and cross-functional delivery to ship AI,
-            payments, API, and data products for enterprise banking.
+            Hi, I&apos;m <span className="font-medium text-foreground">Manas</span> — I bridge
+            engineering and product to turn ambiguous problems into simple, scalable experiences.
           </motion.p>
 
           <motion.div
