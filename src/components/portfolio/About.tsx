@@ -1,12 +1,30 @@
-import { Counter, Reveal, SectionHeading } from "./primitives";
+import { Reveal, SectionHeading } from "./primitives";
 
-const metrics = [
-  { value: 3, suffix: "+", label: "Years Experience" },
-  { value: 5, suffix: "M+", label: "Records Processed" },
-  { value: 23, suffix: "%", label: "Self-Service Deflection" },
-  { value: 11, suffix: "", label: "Business Lines Supported" },
-  { value: 98, suffix: "%", label: "Login Success" },
-  { value: 200, suffix: " TPS", label: "AI Load Validated" },
+const capabilities = [
+  {
+    title: "AI Products",
+    description: "Building trustworthy AI experiences for banking.",
+  },
+  {
+    title: "Payments",
+    description: "Designing products around real-time financial workflows.",
+  },
+  {
+    title: "Platform Products",
+    description: "Turning complex internal processes into scalable self-service tools.",
+  },
+  {
+    title: "Product Discovery",
+    description: "From stakeholder problems to requirements, priorities, and MVPs.",
+  },
+  {
+    title: "Technical Execution",
+    description: "Working across APIs, microservices, data, and cloud to ship products.",
+  },
+  {
+    title: "Responsible AI",
+    description: "Designing guardrails, reliability, and measurable outcomes into AI products.",
+  },
 ];
 
 export function About() {
@@ -36,14 +54,16 @@ export function About() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-2">
-          {metrics.map((m, i) => (
-            <Reveal key={m.label} delay={i * 0.06}>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {capabilities.map((c, i) => (
+            <Reveal key={c.title} delay={i * 0.06}>
               <div className="glass-card glass-card-hover h-full p-5">
-                <p className="font-display text-2xl font-semibold text-gradient sm:text-3xl">
-                  <Counter value={m.value} suffix={m.suffix} />
+                <p className="font-display text-base font-semibold text-gradient sm:text-lg">
+                  {c.title}
                 </p>
-                <p className="mt-2 text-sm text-muted-foreground">{m.label}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {c.description}
+                </p>
               </div>
             </Reveal>
           ))}
