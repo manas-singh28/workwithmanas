@@ -1,4 +1,4 @@
-import { Download, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Download, Linkedin, Mail, Phone } from "lucide-react";
 import { Reveal } from "./primitives";
 import resume from "@/assets/resume/PM_ManasSingh_Resume.pdf.asset.json";
 
