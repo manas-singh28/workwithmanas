@@ -35,7 +35,7 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-[1fr_1fr]">
         <Reveal className="space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            I am a technical product builder at HSBC, combining software engineering depth with
+            I am a senior software engineer at HSBC, combining software engineering depth with
             hands-on product discovery, requirements definition, prioritization, and delivery.
           </p>
           <p>

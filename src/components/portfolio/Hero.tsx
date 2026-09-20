@@ -24,7 +24,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="mt-7 text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-[2.95rem]"
           >
-            <span className="text-gradient">Technical Product Builder.</span>
+            <span className="text-gradient">Product-Minded Engineer.</span>
             <br />
             Turning Complex Problems
             <br />
