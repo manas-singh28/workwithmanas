@@ -47,12 +47,6 @@ export function Contact() {
               target="_blank"
               rel="noreferrer"
               download="PM_ManasSingh_Resume.pdf"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm transition-colors hover:border-ring"
-            >
-              <Github className="size-4" /> GitHub
-            </a>
-            <a
-              href="#"
               className="bg-gradient-primary inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-[var(--shadow-glow)] transition-transform duration-300 hover:-translate-y-0.5"
             >
               <Download className="size-4" /> Download Resume
